@@ -1,0 +1,26 @@
+<html>
+<head>
+  <meta charset='UTF-8'>
+  <title>Hours And Days</title>
+</head>
+<body>
+  <table>
+      <th>Day of week</th><th>Count</th>
+      <% days.each do |key, value|%>
+       <tr>
+          <td><%= "#{key}" %></td>
+          <td><%= "#{value}" %></td>
+        </tr>
+      <% end %>
+    </table>
+    <table>
+      <th>Hour</th><th>Count</th>
+      <% hours.each do |key, value|%>
+       <tr>
+          <td><%= "#{key}" %></td>
+          <td><%= "#{value}" %></td>
+        </tr>
+      <% end %>
+    </table>
+</body>
+</html>
